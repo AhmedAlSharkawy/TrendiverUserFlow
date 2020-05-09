@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="#Be_there The first open video on demand and paid live-streaming platform in MENA" />
+    <title>تسجيل</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id=c></canvas>
+<div class="bgimg pd-bottom w3-display-container w3-animate-opacity w3-text-white">
+  <a href="./register.html" class="change-language">English</a>
+  <a href="./index arabic.html" class="go-back">❮</a>
+  <div class="w3-padding-small w3-xlarge logo-container sm">
+    <img class="logo-img" src="logo.png">
+  </div>
+  <div class="content-container ar">
+    <form id="registrationFormAR">
+      <div class="field">
+        <legend>تسجيل كمقدم محتوي</legend>
+        <ul id="registrationContnetBody">
+          <li>
+            <label for="email" class="data-entry-label">البريد الإلكتروني</label>
+            <input type="email" name="email" id="email" placeholder="user@email.com"  class="data-entry-input" required>
+            
+          </li>
+          <li>
+            <label for="fbAccount" class="data-entry-label">اسم حساب / صفحة الفيسبوك</label>
+            <input type="text" name="fbAccount" id="fbAccount" placeholder="facebook.com/name"  class="data-entry-input" required>
+            
+          </li>
+          <li>
+            <label for="contentType" class="data-entry-label">نوع المحتوى</label>
+            <select id="contentType" name="contentType" class="data-entry-input" required>
+              <option value="" disabled selected hidden>اختار نوع المحتوى</option>
+              <option value="science_knowledge">علم و معرفة</option>
+              <option value="entertainment">ترفيه</option>
+              <option value="arts_literature">فنون و اداب</option>
+              <option value="sports_health">رياضة و صحة</option>
+              <option value="others">اخرى</option>
+            </select>
+          </li>
+          <li class="horizontal">
+            <label for="noContnet" class="data-entry-label">عدد المحتوى</label>
+            <input type="number" name="noContnet" id="noContnet" placeholder="10" class="data-entry-input" required>
+            
+          </li>
+          <li class="horizontal">
+            <label for="averageContentPrice" class="data-entry-label">متوسط سعر المحتوي / الحدث</label>
+            <input type="number" name="averageContentPrice" id="averageContentPrice" class="data-entry-input" required>
+            
+          </li>
+          <li class="horizontal">
+            <label for="averageNumberViewers" class="data-entry-label">متوسط عدد المشاهدين</label>
+            <input type="number" name="averageNumberViewers" id="averageNumberViewers" class="data-entry-input" required>
+            
+          </li>
+          <li>
+            <label for="mobile" class="data-entry-label">رقم الهاتف</label>
+            <input type="number" name="mobile" id="mobile" placeholder="01001234567" class="data-entry-input" required>
+            
+          </li>
+          <li class="horizontal">
+            <label for="firstName" class="data-entry-label">الاسم الاول</label>
+            <input type="name" name="firstName" id="firstName" placeholder="John"  class="data-entry-input" required>
+            
+          </li>
+          <li class="horizontal">
+            <label for="lastName" class="data-entry-label">اسم العائلة</label>
+            <input type="name" name="lastName" id="lastName" placeholder="Doe"  class="data-entry-input" required>
+            
+          </li>
+          <li>
+            <label for="password"  class="data-entry-label">كلمه السر</label>
+            <input type="password" name="password" id="password"  class="data-entry-input" required>
+            
+          </li>
+          <li>
+            <label for="ConfirmPassword"  class="data-entry-label">اعد ادخال كلمة المرور</label>
+            <input type="password" name="ConfirmPassword" id="ConfirmPassword"  class="data-entry-input" required>
+            
+          </li>
+          <li class="submit">
+            <input class="register" type="submit" value="تسجيل حساب">
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+  <div class="w3-padding-large">
+    &copy; Copyright 2020, Trendiver.com
+  </div>
+  <div id="loaderContainer" class="loader-container">
+    <div class="loader"></div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script>
+  var w = c.width = window.innerWidth,
+    h = c.height = window.innerHeight,
+    ctx = c.getContext( '2d' ),
+    
+    minDist = 10,
+    maxDist = 30,
+    initialWidth = 10,
+    maxLines = 100,
+    initialLines = 4,
+    speed = 5,
+    
+    lines = [],
+    frame = 0,
+    timeSinceLast = 0,
+    
+    dirs = [
+   // straight x, y velocity
+      [ 0, 1 ],
+      [ 1, 0 ],
+      [ 0, -1 ],
+    	[ -1, 0 ],
+   // diagonals, 0.7 = sin(PI/4) = cos(PI/4)
+      [ .7, .7 ],
+      [ .7, -.7 ],
+      [ -.7, .7 ],
+      [ -.7, -.7]
+    ],
+    starter = { // starting parent line, just a pseudo line
+      
+      x: w / 2,
+      y: h / 2,
+      vx: 0,
+      vy: 0,
+      width: initialWidth
+    };
+
+function init() {
+  
+  lines.length = 0;
+  
+  for( var i = 0; i < initialLines; ++i )
+    lines.push( new Line( starter ) );
+  
+  ctx.fillStyle = '#222';
+  ctx.fillRect( 0, 0, w, h );
+  
+  // if you want a cookie ;)
+  // ctx.lineCap = 'round';
+}
+function getColor( x ) {
+  
+  return 'hsl( hue, 80%, 50% )'.replace(
+  	'hue', x / w * 360 + frame
+  );
+}
+function anim() {
+  
+  window.requestAnimationFrame( anim );
+  
+  ++frame;
+  
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = 'rgba(0,0,0,.02)';
+  ctx.fillRect( 0, 0, w, h );
+  ctx.shadowBlur = .5;
+  
+  for( var i = 0; i < lines.length; ++i ) 
+    
+    if( lines[ i ].step() ) { // if true it's dead
+      
+      lines.splice( i, 1 );
+      --i;
+      
+    }
+  
+  // spawn new
+  
+  ++timeSinceLast
+  
+  if( lines.length < maxLines && timeSinceLast > 10 && Math.random() < .5 ) {
+    
+    timeSinceLast = 0;
+    
+    lines.push( new Line( starter ) );
+    
+    // cover the middle;
+    ctx.fillStyle = ctx.shadowColor = getColor( starter.x );
+    ctx.beginPath();
+    ctx.arc( starter.x, starter.y, initialWidth, 0, Math.PI * 2 );
+    ctx.fill();
+  }
+}
+
+function Line( parent ) {
+  
+  this.x = parent.x | 0;
+  this.y = parent.y | 0;
+  this.width = parent.width / 1.25;
+  
+  do {
+    
+    var dir = dirs[ ( Math.random() * dirs.length ) |0 ];
+    this.vx = dir[ 0 ];
+    this.vy = dir[ 1 ];
+    
+  } while ( 
+    ( this.vx === -parent.vx && this.vy === -parent.vy ) || ( this.vx === parent.vx && this.vy === parent.vy) );
+  
+  this.vx *= speed;
+  this.vy *= speed;
+  
+  this.dist = ( Math.random() * ( maxDist - minDist ) + minDist );
+  
+}
+Line.prototype.step = function() {
+  
+  var dead = false;
+  
+  var prevX = this.x,
+      prevY = this.y;
+  
+  this.x += this.vx;
+  this.y += this.vy;
+  
+  --this.dist;
+  
+  // kill if out of screen
+  if( this.x < 0 || this.x > w || this.y < 0 || this.y > h )
+    dead = true;
+  
+  // make children :D
+  if( this.dist <= 0 && this.width > 1 ) {
+    
+    // keep yo self, sometimes
+    this.dist = Math.random() * ( maxDist - minDist ) + minDist;
+    
+    // add 2 children
+    if( lines.length < maxLines ) lines.push( new Line( this ) );
+    if( lines.length < maxLines && Math.random() < .5 ) lines.push( new Line( this ) );
+    
+    // kill the poor thing
+    if( Math.random() < .2 ) dead = true;
+  }
+  
+  ctx.strokeStyle = ctx.shadowColor = getColor( this.x );
+  ctx.beginPath();
+  ctx.lineWidth = this.width;
+  ctx.moveTo( this.x, this.y );
+  ctx.lineTo( prevX, prevY );
+  ctx.stroke();
+  
+  if( dead ) return true
+}
+
+init();
+anim();
+
+window.addEventListener( 'resize', function() {
+  
+  w = c.width = window.innerWidth;
+  h = c.height = window.innerHeight;
+  starter.x = w / 2;
+  starter.y = h / 2;
+  
+  init();
+} )
+</script>
+
+</body>
+</html>

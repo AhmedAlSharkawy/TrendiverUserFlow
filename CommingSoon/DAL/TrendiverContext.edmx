@@ -69,8 +69,10 @@
           <Property Name="NumberOfContent" Type="int" />
           <Property Name="AvgPricePerCost" Type="int" />
           <Property Name="MobileNumber" Type="varchar" MaxLength="11" />
-          <Property Name="FisrtName" Type="nvarchar" MaxLength="50" />
           <Property Name="LastName" Type="nvarchar" MaxLength="50" />
+          <Property Name="FisrtName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CreationDate" Type="datetime" Nullable="false" />
+          <Property Name="AvgViewersNum" Type="int" Nullable="false" />
         </EntityType>
         <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
           <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
@@ -210,6 +212,8 @@
           <Property Name="MobileNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
           <Property Name="FisrtName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AvgViewersNum" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="AspNetRole">
           <Key>
@@ -301,6 +305,8 @@
           <EntitySetMapping Name="ContentPublisherInfoes">
             <EntityTypeMapping TypeName="Model.ContentPublisherInfo">
               <MappingFragment StoreEntitySet="ContentPublisherInfo">
+                <ScalarProperty Name="AvgViewersNum" ColumnName="AvgViewersNum" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="FisrtName" ColumnName="FisrtName" />
                 <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />

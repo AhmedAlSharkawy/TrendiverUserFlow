@@ -363,7 +363,9 @@ namespace CommingSoon.Controllers
                     NumberOfContent = model.NoContnet,
                     FacebookAccountOrPage = model.FbAccount,
                     ContentType = model.ContentType,
-                    AvgPricePerCost = model.AverageContentPrice
+                    AvgPricePerCost = model.AverageContentPrice,
+                    AvgViewersNum = model.AverageNumberViewers,
+                    CreationDate = DateTime.Now
                 });
                 if (!writeRepository.UnitOfWork.SaveChanges())
                 {
@@ -426,7 +428,9 @@ namespace CommingSoon.Controllers
                     NumberOfContent = model.NoContnet,
                     FacebookAccountOrPage = model.FbAccount,
                     ContentType = model.ContentType,
-                    AvgPricePerCost = model.AverageContentPrice
+                    AvgPricePerCost = model.AverageContentPrice,
+                    AvgViewersNum = model.AverageNumberViewers,
+                    CreationDate = DateTime.Now
                 });
                 if (!writeRepository.UnitOfWork.SaveChanges())
                 {

@@ -52,6 +52,8 @@ namespace CommingSoon.Models
         public string ContentType { get; set; }
         public int NoContnet { get; set; }
         public int AverageContentPrice { get; set; }
+        public int AverageNumberViewers { get; set; }
+
         public string Mobile { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

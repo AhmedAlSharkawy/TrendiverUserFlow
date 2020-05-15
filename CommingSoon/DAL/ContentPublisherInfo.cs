@@ -23,5 +23,7 @@ namespace CommingSoon.DAL
         public string MobileNumber { get; set; }
         public string FisrtName { get; set; }
         public string LastName { get; set; }
+        public System.DateTime CreationDate { get; set; }
+        public int AvgViewersNum { get; set; }
     }
 }

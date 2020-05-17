@@ -13,17 +13,17 @@ namespace CommingSoon
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            // Route to index.html
-            //routes.MapRoute(
-            //    name: "Default",
-            //    url: "{id}.html",
-            //    defaults: new { id = "index" });
-
+            //Route to index.html
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                url: "{id}.html",
+                defaults: new { id = "index" });
+
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            //);
         }
     }
 }

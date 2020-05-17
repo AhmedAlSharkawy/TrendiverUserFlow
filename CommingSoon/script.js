@@ -11,6 +11,7 @@ $("#registrationForm").submit(function( event ) {
             $("#registrationContnetBody").html(result);
             $("#registrationContnetBody").replaceWith( "<div class='message-body'>" + result + "</div>" );
             $("#loaderContainer").css("display", "none");
+            fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
             alert("Error: " + xhr.responseJSON["Message"]);
@@ -33,6 +34,7 @@ $("#registrationFormAR").submit(function (event) {
             $("#registrationContnetBody").html(result);
             $("#registrationContnetBody").replaceWith("<div class='message-body'>" + result + "</div>");
             $("#loaderContainer").css("display", "none");
+            fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
             alert("Error: " + xhr.responseJSON["Message"]);

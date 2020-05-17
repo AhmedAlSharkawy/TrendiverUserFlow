@@ -11,8 +11,10 @@ $("#registrationForm").submit(function( event ) {
             $("#registrationContnetBody").html(result);
             $("#registrationContnetBody").replaceWith( "<div class='message-body'>" + result + "</div>" );
             $("#loaderContainer").css("display", "none");
+            fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
+            fbq('track', 'ErrorRegistration');
             alert("Error: " + xhr.responseJSON["Message"]);
             $("#loaderContainer").css("display", "none");
         }
@@ -33,8 +35,10 @@ $("#registrationFormAR").submit(function (event) {
             $("#registrationContnetBody").html(result);
             $("#registrationContnetBody").replaceWith("<div class='message-body'>" + result + "</div>");
             $("#loaderContainer").css("display", "none");
+            fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
+            fbq('track', 'ErrorRegistration');
             alert("Error: " + xhr.responseJSON["Message"]);
             $("#loaderContainer").css("display", "none");
         }

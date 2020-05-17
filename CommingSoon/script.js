@@ -14,6 +14,7 @@ $("#registrationForm").submit(function( event ) {
             fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
+            fbq('track', 'ErrorRegistration');
             alert("Error: " + xhr.responseJSON["Message"]);
             $("#loaderContainer").css("display", "none");
         }
@@ -37,6 +38,7 @@ $("#registrationFormAR").submit(function (event) {
             fbq('track', 'CompleteRegistration');
         },
         error: function (xhr, status, error) {
+            fbq('track', 'ErrorRegistration');
             alert("Error: " + xhr.responseJSON["Message"]);
             $("#loaderContainer").css("display", "none");
         }

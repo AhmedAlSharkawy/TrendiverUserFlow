@@ -16,7 +16,7 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
+                    <td>{{providerDetails.name}}</td>
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>1234</td>

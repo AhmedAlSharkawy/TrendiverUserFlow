@@ -1,4 +1,3 @@
-
 import Vue from "vue";
 import axios from "axios";
 
@@ -24,7 +23,7 @@ export default {
   actions: {
     getProviderDetails({ commit }) {
       return axios
-        .get("http://api/dashboard")
+        .get("https://www.trendiver.com/api/dashboard")
         .then(data => {
           commit("SET_PROVIDER_DETAILS", data);
         })

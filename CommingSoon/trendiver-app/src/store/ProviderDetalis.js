@@ -16,7 +16,7 @@ export default {
   mutations: {
     ["SET_PROVIDER_DETAILS"](state, providerDetails) {
       state.providerDetails = providerDetails.data;
-
+    
       return providerDetails;
     }
   },

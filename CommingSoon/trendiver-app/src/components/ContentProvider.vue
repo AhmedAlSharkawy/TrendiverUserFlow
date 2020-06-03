@@ -1,11 +1,9 @@
  
 <template>
     <div>
-        {{providerDetails}}
         <table class="table table-bordered">
             <thead>
                 <tr>
-                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Content Type</th>
                 <th scope="col">Avg Price</th>
@@ -14,13 +12,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>{{providerDetails.name}}</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>1234</td>
-                    <td>23</td>
+                <tr v-for="(provider, key , i) in providerDetails.ContentPublishers_All"
+                 :key="key">
+                    {{i}}
+                    <td>{{ provider.Name }}</td>
+                    <td>{{ provider.ContentType }}</td>
+                    <td>{{ provider.PriceAvg }}</td>
+                    <td>{{ provider.ContentNumber }}</td>
+                    <td>{{ provider.ViewwesAvg }}</td>
                 </tr>
             </tbody>
         </table>

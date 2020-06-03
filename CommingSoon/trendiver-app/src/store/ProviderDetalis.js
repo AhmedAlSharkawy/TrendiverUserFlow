@@ -6,7 +6,7 @@ Vue.prototype.$http = axios;
 export default {
   namespaced: true,
   state: {
-    providerDetails: ""
+    providerDetails: [{}]
   },
   getters: {
     providerDetails(state) {

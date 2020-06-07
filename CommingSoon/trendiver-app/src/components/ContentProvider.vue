@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="(provider, key , i) in providerDetails.ContentPublishers_All"
+                <tr v-for="(provider, key , i) in getAllElements()"
                  :key="key">
                     {{i}}
                     <td>{{ provider.Name }}</td>
@@ -39,7 +39,10 @@ export default {
   methods: {
     ...mapActions({
       getProviderDetails: "ProviderDetails/getProviderDetails"
-    })
+    }),
+    getAllElements() {
+      return this.providerDetails.ContentPublishers_All
+    }
   },
    created: function() {
     this.getProviderDetails();

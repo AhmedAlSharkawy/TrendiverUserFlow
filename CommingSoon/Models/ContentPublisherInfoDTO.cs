@@ -29,5 +29,11 @@ namespace CommingSoon.Models
         public long ContentPublisher_Today_Count { get; set; }
         public List<GroupingContentPublisher> GroupingContentPublishers_All { get; set; }
         public List<GroupingContentPublisher> GroupingContentPublishers_Today { get; set; }
+        public int ContentProviders { get; set; }
+        public int Contents { get; set; }
+        public int AvgPricePerContent  { get; set; }
+        public int AvgEstimatedViewersPerContent { get; set; }
+        public int TotalEstimatedRevenue { get; set; }
+        public int CommissionNet { get; set; }
     }
 }

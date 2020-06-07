@@ -28,6 +28,9 @@ namespace CommingSoon.Controllers
             {
                 var contentPublishers = ContentPublishersDTO(false);
                 var contentPublishers_Today = ContentPublishersDTO(true);
+                var allData = readRepo.GetAll();
+                int contents = (int)allData.Sum(c => c.NumberOfContent);
+                int totalEstimatedRevenue = (int)allData.Sum(c => c.NumberOfContent * c.AvgPricePerCost * c.AvgViewersNum);
                 return Ok(new DashBoard
                 {
                     ContentPublishers_All = contentPublishers,
@@ -35,7 +38,13 @@ namespace CommingSoon.Controllers
                     ContentPublishers_Today = contentPublishers_Today,
                     ContentPublisher_Today_Count = contentPublishers_Today.Count,
                     GroupingContentPublishers_All= GroupingContentPublishers(false),
-                    GroupingContentPublishers_Today= GroupingContentPublishers(true)
+                    GroupingContentPublishers_Today= GroupingContentPublishers(true),
+                    ContentProviders = allData.Count(),
+                    Contents = contents,
+                    AvgPricePerContent = (int)allData.Sum(c => c.AvgPricePerCost) / contents,
+                    AvgEstimatedViewersPerContent = (int)allData.Sum(c => c.AvgViewersNum) / contents,
+                    TotalEstimatedRevenue = totalEstimatedRevenue,
+                    CommissionNet = (totalEstimatedRevenue*20)/100
                 });
             }
             catch (Exception ex)

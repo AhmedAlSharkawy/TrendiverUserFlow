@@ -1,10 +1,10 @@
 <template>
-  <div class="dashboard col-8">
+  <div v-if="getAllProviders()" class="dashboard col-8">
     <div class="dashboard-container">
       <section class="dashboard-icons">
         <img src="../assets/Provider.svg" />
         <p class="icon-title">Content Providers</p>
-        <p class="dashboard-number">{{ getAllElements() }}</p>
+        <p class="dashboard-number">{{ getProvider(1).ContentType }}</p>
       </section>
       <section class="dashboard-icons">
         <img src="../assets/Content.svg" />
@@ -59,16 +59,13 @@ export default {
     ...mapActions({
       getProviderDetails: "ProviderDetails/getProviderDetails"
     }),
-    getAllElements() {
-       let zft=  this.providerDetails.ContentPublishers_All
-       console.log(zft)
-       return zft;
+    getAllProviders() {
+      return this.providerDetails.ContentPublishers_All
+      
     },
-    // getOneElement(index) {
-    //   let zft= this.providerDetails.ContentPublishers_All[index];
-    //   console.log(zft)
-    //   return zft;
-    // }
+    getProvider(index) {
+      return this.providerDetails.ContentPublishers_All[index];
+    }
   },
   created: function() {
     this.getProviderDetails();
@@ -82,7 +79,7 @@ export default {
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 3px 7px 1px #dfdfdf;
-  margin-top: 10px;
+  margin-top: 15px;
   .dashboard-container {
     display: flex;
     flex-direction: row;

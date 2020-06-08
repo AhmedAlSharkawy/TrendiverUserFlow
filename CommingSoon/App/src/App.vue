@@ -1,9 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-       <!-- <router-link to="/">Dashboard</router-link>  -->
-       <traction></traction>
+    <div class="d-flex flex-column" id="nav">
+      <traction></traction>
+      <div class="d-flex align-self-center flex-column">
+        <button class="align-self-center btn btn-default" @click="seen = !seen">Advanced</button>
+        <p v-if="seen">
+          <content-provider></content-provider>
+        </p>
+      </div>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+
+export default {
+  data() {
+    return {
+      seen: false
+    };
+  },
+};
+</script>
+
+<style lang="less" scoped>
+button {
+  width: fit-content;
+  margin: 20px;
+}
+</style>

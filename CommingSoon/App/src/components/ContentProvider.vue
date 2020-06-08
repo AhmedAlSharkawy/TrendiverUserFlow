@@ -15,7 +15,7 @@
                 <tr v-for="(provider, key , i) in getAllProviders()"
                  :key="key">
                     {{i}}
-                    <td>{{ provider.Name }}</td>
+                    <td>{{ key + 1 }} - {{ provider.Name }}</td>
                     <td>{{ provider.ContentType }}</td>
                     <td>{{ provider.PriceAvg }}</td>
                     <td>{{ provider.ContentNumber }}</td>

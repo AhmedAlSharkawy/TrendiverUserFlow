@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div class="d-flex flex-column" id="nav">
-      <traction></traction>
-      <div class="d-flex align-self-center flex-column">
-        <button class="align-self-center btn btn-default" @click="seen = !seen">Advanced</button>
-        <p v-if="seen">
-          <content-provider></content-provider>
-        </p>
+    <div class="d-flex flex-column container" id="nav">
+      <div class="row">
+        <div class="col-12">
+          <traction></traction>
+        </div>
+        <div class="col-12">
+          <div class="d-flex align-self-center flex-column w-100">
+            <button class="align-self-center btn btn-default" @click="seen = !seen">Advanced</button>
+            <p v-if="seen">
+              <content-provider></content-provider>
+            </p>
+          </div>
+        </div>
+        
       </div>
     </div>
     <router-view />

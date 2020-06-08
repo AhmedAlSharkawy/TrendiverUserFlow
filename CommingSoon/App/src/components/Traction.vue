@@ -1,5 +1,5 @@
 <template>
-  <div v-if="getAllProviders()" class="dashboard col-8">
+  <div v-if="getAllProviders()" class="dashboard w-100">
     <div class="dashboard-container">
       <section class="dashboard-icons">
         <img src="../assets/Provider.svg" />

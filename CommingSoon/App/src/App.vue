@@ -2,7 +2,7 @@
   <div id="app">
     <div class="d-flex flex-column container" id="nav">
       <div class="row">
-        <div class="col-12">
+        <div class="traction col-12">
           <traction></traction>
         </div>
         <div class="col-12">
@@ -13,7 +13,6 @@
             </p>
           </div>
         </div>
-        
       </div>
     </div>
     <router-view />
@@ -32,6 +31,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.traction {
+  box-sizing: border-box;
+}
 button {
   width: fit-content;
   margin: 20px;

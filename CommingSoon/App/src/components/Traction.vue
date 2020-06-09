@@ -1,20 +1,20 @@
 <template>
-  <div v-if="getAllProviders()" class="dashboard w-100">
+  <div class="dashboard w-100">
     <div class="dashboard-container">
       <section class="dashboard-icons">
         <img src="../assets/Provider.svg" />
         <p class="icon-title">Content Providers</p>
-        <p class="dashboard-number">{{ getProvider(1).ContentType }}</p>
+        <p class="dashboard-number">{{ providerDetails.ContentProviders }}</p>
       </section>
       <section class="dashboard-icons">
         <img src="../assets/Content.svg" />
         <p class="icon-title">Contents</p>
-        <p class="dashboard-number">555</p>
+        <p class="dashboard-number">{{providerDetails.Contents}}</p>
       </section>
       <section class="dashboard-icons">
         <img src="../assets/PriceContent.svg" />
         <p class="icon-title">Avg Price/Content</p>
-        <p class="dashboard-number">555</p>
+        <p class="dashboard-number">{{providerDetails.AvgPricePerContent}}</p>
       </section>
     </div>
     <div class="dashboard-container">
@@ -24,7 +24,7 @@
           Avg Estimated
           <br />Viewers/Content
         </p>
-        <p class="dashboard-number">555</p>
+        <p class="dashboard-number">{{providerDetails.AvgEstimatedViewersPerContent}}</p>
       </section>
       <section class="dashboard-icons">
         <img src="../assets/Revenue.svg" />
@@ -32,7 +32,7 @@
           Total Estimated
           <br />Revenue
         </p>
-        <p class="dashboard-number">555</p>
+        <p class="dashboard-number">{{providerDetails.TotalEstimatedRevenue}}</p>
       </section>
       <section class="dashboard-icons">
         <img src="../assets/CommissionRevenue.svg" />
@@ -40,7 +40,7 @@
           Commission Net
           <br />Revenue (EBTDA)
         </p>
-        <p class="dashboard-number">555</p>
+        <p class="dashboard-number">{{providerDetails.CommissionNet}}</p>
       </section>
     </div>
   </div>
@@ -58,14 +58,7 @@ export default {
   methods: {
     ...mapActions({
       getProviderDetails: "ProviderDetails/getProviderDetails"
-    }),
-    getAllProviders() {
-      return this.providerDetails.ContentPublishers_All
-      
-    },
-    getProvider(index) {
-      return this.providerDetails.ContentPublishers_All[index];
-    }
+    })
   },
   created: function() {
     this.getProviderDetails();
@@ -96,6 +89,17 @@ export default {
       }
       .dashboard-number {
         text-align: center;
+      }
+    }
+  }
+   @media only screen and (max-width: 600px) {
+    padding: 10px 0;
+    .dashboard-container {
+      .dashboard-icons {
+         margin: 0;
+         .icon-title {
+           padding: 6px;
+         }
       }
     }
   }

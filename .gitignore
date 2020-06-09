@@ -3,3 +3,7 @@
 ################################################################################
 
 /CommingSoon/bin
+/CommingSoon/Log
+/CommingSoon/obj
+/CommingSoon/Properties/PublishProfiles
+/.vs

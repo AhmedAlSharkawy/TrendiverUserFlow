@@ -19,6 +19,9 @@ namespace CommingSoon
                 url: "{id}.html",
                 defaults: new { id = "index" });
 
+
+            routes.MapPageRoute("all", "app/{*url}", "~/indexDev.html");
+
             //routes.MapRoute(
             //    name: "Default",
             //    url: "{controller}/{action}/{id}",

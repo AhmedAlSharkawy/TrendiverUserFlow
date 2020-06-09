@@ -291,6 +291,7 @@
     <Content Include="Global.asax" />
     <Content Include="index arabic.html" />
     <Content Include="index.html" />
+    <Content Include="indexDev.html" />
     <Content Include="logo.png" />
     <Content Include="register arabic.html" />
     <Content Include="register.html" />

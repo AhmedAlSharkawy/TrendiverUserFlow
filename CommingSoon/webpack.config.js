@@ -1,5 +1,6 @@
 var path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     mode: 'development',
@@ -15,14 +16,29 @@ module.exports = {
           { 
             test: /\.less$/, 
             use: [
-              'vue-style-loader',
+              'vue-style-loader',  
               'css-loader',
-              'less-loader'
+              'less-loader',
+            ]
+          },
+          {
+            test: /\.css$/,
+            use: [
+              MiniCssExtractPlugin.loader, // instead of style-loader
+              'css-loader'
             ]
           },
           {
             test: /\.vue$/,
-            loader: 'vue-loader'
+            use:[
+              {
+                loader: 'vue-loader'
+              },
+              {
+                loader: "vue-svg-inline-loader",
+              }
+            ]
+  
           },
           {
             test: /\.m?js$/,
@@ -35,7 +51,7 @@ module.exports = {
             }
           },
           {
-            test: /\.(png|jpe?g|gif|svg)$/i,
+            test: /\.(png|jpe?g|gif|svg)$/i,  //this is not the right way to make svg works !!
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
@@ -44,6 +60,7 @@ module.exports = {
         ]
       },
       plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new MiniCssExtractPlugin(),
       ]
 };

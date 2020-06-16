@@ -2,24 +2,24 @@
   <div class="dashboard w-100">
     <div class="dashboard-container">
       <section class="dashboard-icons">
-        <img src="../assets/Provider.svg" />
+        <img svg-inline class="svg-img" src="../assets/Provider.svg" />
         <p class="icon-title">Content Providers</p>
         <p class="dashboard-number">{{ providerDetails.ContentProviders }}</p>
       </section>
       <section class="dashboard-icons">
-        <img src="../assets/Content.svg" />
+        <img svg-inline class="svg-img" src="../assets/Content.svg" />
         <p class="icon-title">Contents</p>
         <p class="dashboard-number">{{providerDetails.Contents}}</p>
       </section>
       <section class="dashboard-icons">
-        <img src="../assets/PriceContent.svg" />
+        <img svg-inline class="svg-img" src="../assets/PriceContent.svg" />
         <p class="icon-title">Avg Price/Content</p>
         <p class="dashboard-number">{{providerDetails.AvgPricePerContent}}</p>
       </section>
     </div>
     <div class="dashboard-container">
       <section class="dashboard-icons">
-        <img src="../assets/ViewersContent.svg" />
+        <img svg-inline class="svg-img" src="../assets/ViewersContent.svg" />
         <p class="icon-title">
           Avg Estimated
           <br />Viewers/Content
@@ -27,7 +27,7 @@
         <p class="dashboard-number">{{providerDetails.AvgEstimatedViewersPerContent}}</p>
       </section>
       <section class="dashboard-icons">
-        <img src="../assets/Revenue.svg" />
+        <img svg-inline class="svg-img" src="../assets/Revenue.svg" />
         <p class="icon-title">
           Total Estimated
           <br />Revenue
@@ -35,7 +35,7 @@
         <p class="dashboard-number">{{providerDetails.TotalEstimatedRevenue}}</p>
       </section>
       <section class="dashboard-icons">
-        <img src="../assets/CommissionRevenue.svg" />
+        <img svg-inline class="svg-img" src="../assets/CommissionRevenue.svg" />
         <p class="icon-title">
           Commission Net
           <br />Revenue (EBTDA)
@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style lang="less" scoped>
+ <style lang="less" scoped>
 .dashboard {
   border: 1px solid #9e9e9e80;
   margin: auto;
@@ -82,6 +82,10 @@ export default {
       flex-direction: column;
       justify-content: center;
       margin: 20px;
+      .svg-img {
+       display: flex;
+       align-self: center;
+      }
       .icon-title {
         text-align: center;
         margin: auto 0;

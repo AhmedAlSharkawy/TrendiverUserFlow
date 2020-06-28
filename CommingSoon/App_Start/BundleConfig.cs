@@ -24,4 +24,9 @@ namespace CommingSoon
                       "~/Content/site.css"));
         }
     }
+    ScriptManager.ScriptResourceMapping.AddDefinition("myscripts", new ScriptResourceDefinition
+    {
+        Path = "~/build/build.js",
+        DebugPath = "~/build/build.js",
+    });
 }

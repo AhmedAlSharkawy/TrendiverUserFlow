@@ -1,2 +1,13 @@
+  
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CommingSoon/bin
+/CommingSoon/Log
+/CommingSoon/obj
+/CommingSoon/Properties/PublishProfiles
+/.vs
+
 #/build/
 /node_modules

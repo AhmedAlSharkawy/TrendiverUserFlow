@@ -2,7 +2,8 @@
   <div>
     <div class="d-flex flex-column container" id="nav">
       <div class="row">
-        <div class="traction col-12">
+        <header></header>
+        <!-- <div class="traction col-12">
           <traction></traction>
         </div>
         <div class="col-12">
@@ -12,10 +13,10 @@
               <content-provider></content-provider>
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-    <router-view />
+   <router-view />
   </div>
 </template>
 

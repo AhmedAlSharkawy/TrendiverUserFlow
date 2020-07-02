@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="d-flex flex-column container" id="nav">
-      <div class="row">
+    <div class="" id="nav">
+      <UF-NavBar></UF-NavBar>
+      <!-- <div class="row">
         <div class="traction col-12">
           <traction></traction>
         </div>
@@ -13,7 +14,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <router-view />
   </div>

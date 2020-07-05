@@ -7,7 +7,7 @@ module.exports = {
     // Path to the 'primary' script of your project, that references all other built resources
     entry: {
       app: "./App/app.js",
-      userFlow: "./App/userFlow.js",
+      userFlow: "./App/userFlowApp.js",
     },
     output: {
         // Output directory and file name

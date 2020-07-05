@@ -1,8 +1,8 @@
 import Vue from 'vue';
 
 //userFlow
-import userFlowNavbar from "./userFlow/sharedComponents/userFlowNavbar.vue";
-import subNavbar from "./userFlow/sharedComponents/subNavbar.vue";
+import userFlowNavbar from "./userFlow/shared/userFlowNavbar.vue";
+import subNavbar from "./userFlow/shared/subNavbar.vue";
 import sliderCard from "./userFlow/components/sliderCard.vue";
 
 

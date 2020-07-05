@@ -5,9 +5,8 @@
       <b-navbar-brand href="#">Trendiver</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
-        <!-- Right aligned nav items -->
-        <div class="m-auto">
-          <b-nav-form class="header-search">
+        <div class="header-search">
+          <b-nav-form>
             <b-form-input size="sm" class="search-input" placeholder="Search"></b-form-input>
             <b-button size="sm" class="search-btn" type="submit">
               <i class="fa fa-search" aria-hidden="true"></i>
@@ -33,30 +32,38 @@ export default {};
 .header {
   .navigation {
     background: #f3f5f7;
-    .search-input {
-      box-sizing: content-box;
-      box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
-      border-radius: 8px 0 0 8px;
-      border: none;
-      color: #6a6d75;
-      padding: 10px 15px;
-      background-color: #fff;
-      height: 16px;
-      line-height: 20px;
-      font-size: 14px;
-      width: 270px;
-    }
-    .search-btn {
-      border-radius: 0 8px 8px 0;
-      box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
-      box-sizing: content-box;
-      padding: 10px 15px;
-      height: 16px;
-      line-height: 20px;
-      color: #fff;
-      font-size: 15px;
-      border: 0 none transparent;
-      background-color: #3512b1;
+    .header-search {
+      margin:auto;
+      @media only screen and (max-width: 600px) {}
+
+      .search-input {
+        box-sizing: content-box;
+        box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
+        border-radius: 8px 0 0 8px;
+        border: none;
+        color: #6a6d75;
+        padding: 10px 15px;
+        background-color: #fff;
+        height: 16px;
+        line-height: 20px;
+        font-size: 14px;
+        width: 270px;
+        @media only screen and (max-width: 600px) {
+          width: 240px;
+        }
+      }
+      .search-btn {
+        border-radius: 0 8px 8px 0;
+        box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
+        box-sizing: content-box;
+        padding: 10px 15px;
+        height: 16px;
+        line-height: 20px;
+        color: #fff;
+        font-size: 15px;
+        border: 0 none transparent;
+        background-color: #3512b1;
+      }
     }
     .btn-section {
       .header-btns {

@@ -5,11 +5,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     mode: 'development',
     // Path to the 'primary' script of your project, that references all other built resources
-    entry: './App/app.js',
+    entry: {
+      app: "./App/app.js",
+      userFlow: "./App/userFlow.js",
+    },
     output: {
         // Output directory and file name
         path: path.resolve(__dirname, 'build'),
-        filename: 'build.js'
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [

@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="" id="nav">
-      <UF-NavBar></UF-NavBar>
+    <div class id="nav">
+      <uf-navbar></uf-navbar>
+      <sub-navbar></sub-navbar>
+
       <!-- <div class="row">
         <div class="traction col-12">
           <traction></traction>
@@ -14,20 +16,19 @@
             </p>
           </div>
         </div>
-      </div> -->
+      </div>-->
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       seen: false
     };
-  },
+  }
 };
 </script>
 

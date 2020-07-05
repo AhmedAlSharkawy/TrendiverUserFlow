@@ -34,8 +34,6 @@ export default {};
     background: #f3f5f7;
     .header-search {
       margin:auto;
-      @media only screen and (max-width: 600px) {}
-
       .search-input {
         box-sizing: content-box;
         box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
@@ -47,7 +45,7 @@ export default {};
         height: 16px;
         line-height: 20px;
         font-size: 14px;
-        width: 270px;
+        width: 300px;
         @media only screen and (max-width: 600px) {
           width: 240px;
         }

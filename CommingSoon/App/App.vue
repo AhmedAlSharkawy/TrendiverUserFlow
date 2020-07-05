@@ -3,7 +3,7 @@
     <div class id="nav">
       <uf-navbar></uf-navbar>
       <sub-navbar></sub-navbar>
-
+      <slider-card></slider-card>
       <!-- <div class="row">
         <div class="traction col-12">
           <traction></traction>

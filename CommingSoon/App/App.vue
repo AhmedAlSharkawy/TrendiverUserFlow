@@ -4,6 +4,7 @@
       <uf-navbar></uf-navbar>
       <sub-navbar></sub-navbar>
       <slider-card></slider-card>
+      <uf-footer></uf-footer>
       <!-- <div class="row">
         <div class="traction col-12">
           <traction></traction>

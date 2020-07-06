@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import ContentProvider from './components/ContentProvider.vue'
-import Traction from './components/Traction.vue'
+import contentProvider from './components/contentProvider.vue'
+import traction from './components/traction.vue'
 
 
-Vue.component("content-provider", ContentProvider);
-Vue.component("traction", Traction);
+Vue.component("content-provider", contentProvider);
+Vue.component("traction", traction);
 
 Vue.config.productionTip = false
 

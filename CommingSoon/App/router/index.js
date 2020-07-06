@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import ContentProvider from '../components/ContentProvider.vue'
+import contentProvider from '../components/contentProvider.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +8,7 @@ Vue.use(VueRouter)
   {
     path: '/ContentProvider',
     name: 'ContentProvider',
-    component: ContentProvider
+    component: contentProvider
   },
 ]
 

@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div class="d-flex flex-column container" id="nav">
-      <div class="row">
+    <div class id="nav">
+      <uf-navbar></uf-navbar>
+      <sub-navbar></sub-navbar>
+      <slider-card></slider-card>
+      <uf-footer></uf-footer>
+      <!-- <div class="row">
         <div class="traction col-12">
           <traction></traction>
         </div>
@@ -13,20 +17,19 @@
             </p>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
     <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       seen: false
     };
-  },
+  }
 };
 </script>
 

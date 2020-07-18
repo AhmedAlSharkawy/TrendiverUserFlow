@@ -5,11 +5,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
     mode: 'development',
     // Path to the 'primary' script of your project, that references all other built resources
-    entry: './App/app.js',
+    entry: {
+      app: "./App/app.js",
+      userFlow: "./App/userFlowApp.js",
+    },
     output: {
         // Output directory and file name
         path: path.resolve(__dirname, 'build'),
-        filename: 'build.js'
+        filename: '[name].bundle.js'
     },
     module: {
         rules: [
@@ -50,6 +53,19 @@ module.exports = {
               }
             }
           },
+          {
+          test: /\.(gif|png|jpe?g|svg)$/i,
+          use: [
+            'file-loader',
+            {
+              loader: 'image-webpack-loader',
+              options: {
+                bypassOnDebug: true, // webpack@1.x
+                disable: true, // webpack@2.x and newer
+              },
+            },
+          ]
+        },
           {
             test: /\.(png|jpe?g|gif|svg)$/i,  //this is not the right way to make svg works !!
             loader: 'file-loader',

@@ -1,7 +1,7 @@
 <template>
   <div class="footer-section">
-    <div class="footer p-5 d-flex flex-row justify-content-around">
-      <div class="col-3">
+    <div class="footer p-5 justify-content-around">
+      <section class="col-md-3 col-xs-10">
         <section class="d-flex flex-row">
           <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
@@ -12,8 +12,8 @@
           Video on demand & paid
           live streaming marketplace
         </p>
-      </div>
-      <section class="inner-section col-3 d-flex flex-column">
+      </section>
+      <section class="inner-section col-md-3 col-xs-10">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,7 +22,7 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-3">
+      <section class="col-md-3 col-xs-10">
         <p>
           <b>Newsletter</b>
         </p>
@@ -47,7 +47,15 @@
     margin-top: 20px;
   .footer {
     background: #e7ebee;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
     .inner-section {
+      display: flex;
+      flex-direction: column;
       a {
         margin-bottom: 17px;
       }
@@ -59,6 +67,12 @@
       height: 39px;
       width: 290px;
       outline: none;
+       @media only screen and (max-width: 600px) {
+         width: 250px;
+       }
+       @media (min-width:600px) {
+        width: 225px;
+       } 
     }
     .footer-signup {
       background: #feca55;

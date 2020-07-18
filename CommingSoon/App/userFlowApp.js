@@ -13,7 +13,6 @@ import {
   BootstrapVue
 } from "bootstrap-vue";
 
-
 // components
 import components from './components'; 
 

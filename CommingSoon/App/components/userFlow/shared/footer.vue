@@ -3,7 +3,7 @@
     <div class="footer p-5 d-flex flex-row justify-content-around">
       <div class="col-3">
         <section class="d-flex flex-row">
-          <img src="../../../../build/logo.png" />
+          <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
             <b>Trendiver</b>
           </p>

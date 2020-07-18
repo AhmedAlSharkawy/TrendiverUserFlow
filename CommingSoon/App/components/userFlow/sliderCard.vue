@@ -11,7 +11,7 @@
     </div>
     <div class="card d-flex flex-column col-3">
       <img svg-inline class="card-icon" src="../../assets/graduation.svg" />
-      <p class="card-title">Interaction learing </p>
+      <p class="card-title">Interaction learning </p>
       <p>
         self-based learning - whenever and wherever
         you want. Graduate while learning part-time

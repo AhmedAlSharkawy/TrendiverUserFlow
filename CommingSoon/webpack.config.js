@@ -54,6 +54,19 @@ module.exports = {
             }
           },
           {
+          test: /\.(gif|png|jpe?g|svg)$/i,
+          use: [
+            'file-loader',
+            {
+              loader: 'image-webpack-loader',
+              options: {
+                bypassOnDebug: true, // webpack@1.x
+                disable: true, // webpack@2.x and newer
+              },
+            },
+          ]
+        },
+          {
             test: /\.(png|jpe?g|gif|svg)$/i,  //this is not the right way to make svg works !!
             loader: 'file-loader',
             options: {

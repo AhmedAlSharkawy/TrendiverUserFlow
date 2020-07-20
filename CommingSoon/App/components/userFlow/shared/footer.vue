@@ -32,7 +32,7 @@
         </p>
         <form>
           <input class="footer-input p-2 mb-2" placeholder="Enter your Email" />
-          <button class="btn footer-signup">Sign Up</button>
+          <button class="btn footer-signup m-1">Sign Up</button>
         </form>
       </section>
     </div>
@@ -70,9 +70,6 @@
        @media only screen and (max-width: 600px) {
          width: 250px;
        }
-       @media (min-width:600px) {
-        width: 225px;
-       } 
     }
     .footer-signup {
       background: #feca55;

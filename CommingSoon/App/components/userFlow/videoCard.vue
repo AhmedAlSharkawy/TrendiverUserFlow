@@ -9,7 +9,6 @@
           <img src="#" />
           <p>Moo Islam</p>
         </div>
-       
         <p>EGP 1090</p>
       </div>
     </div>

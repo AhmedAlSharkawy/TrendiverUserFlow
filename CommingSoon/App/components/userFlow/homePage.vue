@@ -6,6 +6,7 @@
     <br/>
     <hr/>
     <video-card></video-card>
+    <pre-footer></pre-footer>
     <uf-footer></uf-footer>
   </div>
 </template>

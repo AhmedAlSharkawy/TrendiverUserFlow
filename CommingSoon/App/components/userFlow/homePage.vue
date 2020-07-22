@@ -4,7 +4,7 @@
     <sub-navbar></sub-navbar>
       <slider-card></slider-card>
       <br />
-    <div class="container">
+      <div class="container">
       <video-card></video-card>
     </div>
     <pre-footer></pre-footer>

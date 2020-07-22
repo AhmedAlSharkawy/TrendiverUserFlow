@@ -9,7 +9,7 @@
         <p class="card-title"> <b>Business Analytics</b></p>
         <div class="card-content d-flex flex-row">
           <img svg-inline class="mr-2"  src="../../assets/userPhoto.svg" />
-          <p class="card-content-text">Moo Islam</p>
+          <p class="card-content-text"><b>Moo Islam</b></p>
         </div>
         <p class="card-price mt-3">EGP 1090</p>
       </div>

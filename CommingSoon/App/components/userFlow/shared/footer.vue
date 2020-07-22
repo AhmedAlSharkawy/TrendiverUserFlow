@@ -1,7 +1,7 @@
 <template>
   <div class="footer-section">
     <div class="footer p-md-5 p-4 justify-content-around">
-      <section class="col-md-4 col-sm-4 col-xs-5">
+      <section class="col-md-4">
         <section class="d-flex flex-row">
           <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
@@ -13,7 +13,7 @@
           live streaming marketplace
         </p>
       </section>
-      <section class="inner-section col-md-4 col-sm-4 col-xs-5">
+      <section class="inner-section col-md-4">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,7 +22,7 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-md-4 col-sm-4 col-xs-5">
+      <section class="col-md-4">
         <p>
           <b>Newsletter</b>
         </p>

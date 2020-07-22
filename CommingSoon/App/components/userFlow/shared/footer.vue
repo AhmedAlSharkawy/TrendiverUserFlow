@@ -1,7 +1,7 @@
 <template>
   <div class="footer-section">
     <div class="footer p-md-5 p-4 justify-content-around">
-      <section class="col-md-3 p-0 col-sm-4 col-xs-5">
+      <section class="col-md-4 col-sm-4 col-xs-5">
         <section class="d-flex flex-row">
           <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
@@ -9,11 +9,11 @@
           </p>
         </section>
         <p class="p-2">
-          Video on demand & paid
+          Video on demand & paid <br/>
           live streaming marketplace
         </p>
       </section>
-      <section class="inner-section p-0 col-md-3 col-sm-4 col-xs-5">
+      <section class="inner-section col-md-4 col-sm-4 col-xs-5">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,13 +22,13 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-md-3 col-sm-4 p-0 col-xs-5">
+      <section class="col-md-4 col-sm-4 col-xs-5">
         <p>
           <b>Newsletter</b>
         </p>
         <p>
-          Sign up in our Newsletter
-          to get weekly updates
+          Sign up in our Newsletter to <br/>
+          get weekly updates
         </p>
         <form>
           <input class="footer-input p-2 mr-2 mb-2" placeholder="Enter your Email" />
@@ -65,14 +65,8 @@
       border-radius: 8px;
       border: none;
       height: 39px;
-      width: 290px;
+      width: 100%;
       outline: none;
-       @media only screen and (max-width: 600px) {
-         width: 250px;
-       }
-       @media (min-width:600px) {
-        width: 225px;
-       } 
     }
     .footer-signup {
       background: #feca55;

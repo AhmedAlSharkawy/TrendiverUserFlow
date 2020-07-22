@@ -1,6 +1,6 @@
 <template>
   <div>
-      <img  svg-inline src="../../assets/Background.svg" />
+      <!-- <img  svg-inline src="../../assets/Background.svg" /> -->
   </div>
 </template>
 

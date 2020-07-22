@@ -30,6 +30,9 @@
     background: #f3f5f7;
     .header-search {
       margin:auto;
+       @media only screen and (max-width: 600px) {
+         margin: 5px 0 10px 11px;
+       }
       .search-input {
         box-sizing: content-box;
         box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);

@@ -1,7 +1,7 @@
 <template>
   <div class="footer-section">
-    <div class="footer p-5 d-flex flex-row justify-content-around">
-      <div class="col-3">
+    <div class="footer p-md-5 p-4 justify-content-around">
+      <section class="col-md-4">
         <section class="d-flex flex-row">
           <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
@@ -9,11 +9,11 @@
           </p>
         </section>
         <p class="p-2">
-          Video on demand & paid
+          Video on demand & paid <br/>
           live streaming marketplace
         </p>
-      </div>
-      <section class="inner-section col-3 d-flex flex-column">
+      </section>
+      <section class="inner-section col-md-4">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,16 +22,16 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-3">
+      <section class="col-md-4">
         <p>
           <b>Newsletter</b>
         </p>
         <p>
-          Sign up in our Newsletter
-          to get weekly updates
+          Sign up in our Newsletter to <br/>
+          get weekly updates
         </p>
         <form>
-          <input class="footer-input p-2 mb-2" placeholder="Enter your Email" />
+          <input class="footer-input p-2 mr-2 mb-2" placeholder="Enter your Email" />
           <button class="btn footer-signup">Sign Up</button>
         </form>
       </section>
@@ -47,7 +47,15 @@
     margin-top: 20px;
   .footer {
     background: #e7ebee;
+    display: flex;
+    flex-direction: row;
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
     .inner-section {
+      display: flex;
+      flex-direction: column;
       a {
         margin-bottom: 17px;
       }
@@ -57,7 +65,7 @@
       border-radius: 8px;
       border: none;
       height: 39px;
-      width: 290px;
+      width: 100%;
       outline: none;
     }
     .footer-signup {

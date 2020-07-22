@@ -22,6 +22,10 @@
   box-shadow: 0px 0px 8px rgba(19, 19, 51, 0.15);
   border-radius: 8px;
   width: 17rem;
+  .card-img-top {
+    width: 275px;
+    height: auto;
+  }
   .card-body {
     .sub-title {
       font-size: 14px;

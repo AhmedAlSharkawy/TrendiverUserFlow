@@ -2,16 +2,25 @@
   <div>
     <div class="card">
       <div>
-      <img svg-inline class="card-img-top" src="../../assets/work.svg" />
+        <img svg-inline class="card-img-top" src="../../assets/work.svg" />
       </div>
       <div class="card-body">
         <p class="sub-title mb-1">Recorded</p>
-        <p class="card-title"> <b>Business Analytics</b></p>
+        <p class="card-title">
+          <b>Business Analytics</b>
+        </p>
         <div class="card-content d-flex flex-row">
-          <img svg-inline class="mr-2"  src="../../assets/userPhoto.svg" />
-          <p class="card-content-text"><b>Moo Islam</b></p>
+          <img svg-inline class="mr-2" src="../../assets/userPhoto.svg" />
+          <p class="card-content-text">
+            <b>Moo Islam</b>
+          </p>
         </div>
-        <p class="card-price mt-3">EGP 1090</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p class="card-price mt-2 mb-0">EGP 1090</p>
       </div>
     </div>
   </div>
@@ -27,16 +36,20 @@
     height: auto;
   }
   .card-body {
+    padding: 5px 16px 16px;
     .sub-title {
       font-size: 14px;
       color: #131333;
     }
     .card-title {
       font-size: 18px;
-      color: #3512B1;
+      color: #3512b1;
     }
     .card-price {
       font-size: 18px;
+    }
+    .checked {
+      color: #feca55;
     }
   }
 }

@@ -9,8 +9,8 @@
           </p>
         </section>
         <p class="p-2">
-          Video on demand & paid <br/>
-          live streaming marketplace
+          Video on demand & paid
+          <br />live streaming marketplace
         </p>
       </section>
       <section class="inner-section col-md-4">
@@ -27,8 +27,8 @@
           <b>Newsletter</b>
         </p>
         <p>
-          Sign up in our Newsletter to <br/>
-          get weekly updates
+          Sign up in our Newsletter to
+          <br />get weekly updates
         </p>
         <form>
           <input class="footer-input p-2 mr-2 mb-2" placeholder="Enter your Email" />
@@ -44,7 +44,7 @@
 
 <style lang="less" scoped>
 .footer-section {
-    margin-top: 20px;
+  margin-top: 20px;
   .footer {
     background: #e7ebee;
     display: flex;

@@ -1,7 +1,7 @@
 <template>
   <div class="footer-section">
-    <div class="footer p-md-5 p-4 justify-content-around">
-      <section class="col-md-4">
+    <div class="footer container pt-md-5 p-4 justify-content-around">
+      <section class="col-md-4 p-0">
         <section class="d-flex flex-row">
           <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
           <p>
@@ -13,7 +13,7 @@
           <br />live streaming marketplace
         </p>
       </section>
-      <section class="inner-section col-md-4">
+      <section class="inner-section col-md-4 p-0">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,7 +22,7 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-md-4">
+      <section class="col-md-4 p-0">
         <p>
           <b>Newsletter</b>
         </p>
@@ -45,8 +45,8 @@
 <style lang="less" scoped>
 .footer-section {
   margin-top: 20px;
+  background: #e7ebee;
   .footer {
-    background: #e7ebee;
     display: flex;
     flex-direction: row;
     @media only screen and (max-width: 600px) {

@@ -1,15 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import contentProvider from '../components/contentProvider.vue'
+import homePage from '../components/userFlow/homePage.vue'
+import categoriesPage from '../components/userFlow/categoriesPage.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/ContentProvider',
-    name: 'ContentProvider',
-    component: contentProvider
+    path: '/homePage',
+    name: 'homePage',
+    component: homePage
   },
+  {
+    path: '/categoriesPage',
+    name: 'categoriesPage',
+    component: categoriesPage
+  }
 ]
 
 const router = new VueRouter({

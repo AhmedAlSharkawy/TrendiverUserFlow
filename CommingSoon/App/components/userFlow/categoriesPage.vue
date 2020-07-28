@@ -4,7 +4,7 @@
     <sub-navbar></sub-navbar>
     <div class="container">
       <p class="provider-title text-center">
-        <b>Top Content Provider</b>
+        <b>Our Instructors</b>
       </p>
       <div class="provider-section d-flex flex-row flex-wrap">
         <instructor-card></instructor-card>

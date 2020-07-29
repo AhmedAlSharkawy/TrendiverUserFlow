@@ -7,6 +7,7 @@
       <br />
       <video-card></video-card>
     </div>
+    
     <pre-footer></pre-footer>
     <uf-footer></uf-footer>
   </div>

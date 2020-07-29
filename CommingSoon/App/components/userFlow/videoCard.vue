@@ -30,9 +30,9 @@
 .card {
   box-shadow: 0px 0px 8px rgba(19, 19, 51, 0.15);
   border-radius: 8px;
-  width: 17rem;
+  width: 16rem;
   .card-img-top {
-    width: 275px;
+    width: 102%;
     height: auto;
   }
   .card-body {

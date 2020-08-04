@@ -1,8 +1,8 @@
 <template>
   <div class="header">
     <b-navbar toggleable="lg" class="navigation d-flex">
-      <img src="../../../../build/logo.png"/>
-      <b-navbar-brand href="#">Trendiver</b-navbar-brand>
+      <img class="logo-img" src="App/assets/logo.png"/> 
+      <b-navbar-brand class="header-title ml-2" href="#"><b>Trendiver</b></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <div class="header-search">
@@ -28,6 +28,13 @@
 .header {
   .navigation {
     background: #f3f5f7;
+    .logo-img {
+      width: 40px;
+      height: 40px;
+    }
+    .header-title {
+      font-size: 14px;
+    }
     .header-search {
       margin:auto;
        @media only screen and (max-width: 600px) {

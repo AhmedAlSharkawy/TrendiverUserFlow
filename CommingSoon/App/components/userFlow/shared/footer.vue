@@ -3,8 +3,8 @@
     <div class="footer container pt-md-5 p-4 justify-content-around">
       <section class="col-md-4 p-0">
         <section class="d-flex flex-row">
-          <img src="../../../../build/63e5830e485df268d38495c37166b21e.png" />
-          <p>
+          <img class="img-logo" src="App/assets/logo.png" />
+          <p class="mt-auto ml-2">
             <b>Trendiver</b>
           </p>
         </section>
@@ -52,6 +52,10 @@
     @media only screen and (max-width: 600px) {
       display: flex;
       flex-direction: column;
+    }
+    .img-logo {
+      width: 50px;
+      height: 50px;
     }
     .inner-section {
       display: flex;

@@ -61,14 +61,14 @@ module.exports = {
               loader: 'image-webpack-loader',
               options: {
                 bypassOnDebug: true, // webpack@1.x
-                disable: true, // webpack@2.x and newer
-              },
+                disable: true,
+              }
             },
           ]
         },
           {
-            test: /\.(png|jpe?g|gif|svg)$/i,  //this is not the right way to make svg works !!
-            loader: 'file-loader',
+            test: /\.(png|jpe?g|gif|svg)$/i,
+            loader: "file-loader?name=/App/assets/[name].[ext]",
             options: {
               name: '[path][name].[ext]',
             },

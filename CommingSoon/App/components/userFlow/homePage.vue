@@ -17,9 +17,8 @@
 .home-header {
   position: relative;
 }
-.container {
-  .slider-card {
-    position: absolute;
-  }
+
+.slider-card {
+  position: absolute;
 }
 </style>

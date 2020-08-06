@@ -11,7 +11,7 @@
         </p>
       </section>
     </div>
-    <div class="card col-md-4 pl-0">
+    <div class="card col-md-4">
       <section class="card-content p-2">
         <img svg-inline class="card-icon" src="../../assets/graduation.svg" />
         <p class="card-title">Interaction Learning</p>
@@ -22,7 +22,7 @@
         </p>
       </section>
     </div>
-    <div class="card col-md-4 pl-0">
+    <div class="card col-md-4">
       <section class="card-content p-2">
         <img svg-inline class="card-icon" src="../../assets/money.svg" />
         <p class="card-title">Save Money</p>

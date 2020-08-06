@@ -25,6 +25,7 @@
     color: #f8f7fd;
     position: absolute;
     bottom: 0;
+    top: 0;
     background: linear-gradient(65.12deg, #3512b1 0%, #7350f2 100%);
     opacity: 0.8;
     width: 100%;

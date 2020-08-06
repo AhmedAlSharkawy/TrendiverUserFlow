@@ -7,7 +7,8 @@ import sliderCard from "./components/userFlow/sliderCard.vue";
 import footer from "./components/userFlow/shared/footer.vue";
 import videoCard from "./components/userFlow/videoCard.vue";
 import preFooter from "./components/userFlow/preFooter.vue";
-import instructorCard from "./components/userFlow/instructorCard.vue"
+import instructorCard from "./components/userFlow/instructorCard.vue";
+import homeHeader from "./components/userFlow/homeHeader.vue";
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
@@ -22,3 +23,4 @@ Vue.component("uf-footer", footer);
 Vue.component("pre-footer",preFooter);
 Vue.component("video-card", videoCard);
 Vue.component("instructor-card", instructorCard);
+Vue.component("home-header",homeHeader);

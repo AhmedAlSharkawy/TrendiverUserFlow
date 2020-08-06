@@ -8,7 +8,7 @@
             <b>Trendiver</b>
           </p>
         </section>
-        <p class="p-2">
+        <p class="pt-2">
           Video on demand & paid
           <br />live streaming marketplace
         </p>

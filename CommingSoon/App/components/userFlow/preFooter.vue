@@ -56,5 +56,13 @@
       color: #ffffff;
     }
   }
+  .instructor-img {
+    position: absolute;
+    left: 74%;
+    top: -20%;
+     @media only screen and (max-width: 600px) {
+       display: none;
+     }
+  }
 }
 </style>

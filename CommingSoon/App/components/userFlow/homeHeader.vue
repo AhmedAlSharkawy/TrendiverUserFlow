@@ -9,7 +9,7 @@
           <br />Live Streaming Marketplace
         </b>
       </p>
-      <p class="text-center">
+      <p class="context text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Hac mauris, orci, egestas proin in bibendum.
       </p>
@@ -17,7 +17,9 @@
         <b>Sign Up Now</b>
       </button>
     </div>
-    <slider-card class="slider-card"></slider-card>
+    <div class="cards-section">
+      <slider-card class="container slider-card"></slider-card>
+    </div>
   </div>
 </template>
 
@@ -26,7 +28,6 @@
   position: relative;
   .background-img {
     width: 100%;
-    position: relative;
   }
   .overlay-layer {
     position: absolute;
@@ -42,15 +43,15 @@
     transform: translate(-50%, -50%);
     position: absolute;
     color: #f8f7fd;
-     @media only screen and (max-width: 600px) {
-       top: 50%;
-       width: fit-content;
-     }
+    @media only screen and (max-width: 600px) {
+      top: 50%;
+      width: fit-content;
+    }
     .main-title {
       font-size: 47px;
-        @media only screen and (max-width: 600px) {
-          font-size: 16px;
-        }
+      @media only screen and (max-width: 600px) {
+        font-size: 25px;
+      }
     }
     .header-signup {
       color: #3512b1;
@@ -60,21 +61,26 @@
       display: flex;
       margin: auto;
       padding: 12px 9px;
-       @media only screen and (max-width: 600px) {
-         padding: 5px 9px;
-       }
+    }
+    .context {
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
     }
   }
-  .slider-card {
-    left: 50px;
-    right: 50px;
-    position: absolute;
-    bottom: -114px;
-     @media only screen and (max-width: 600px) {
-       top: 195px;
-       bottom: auto;
-       display: none;
-     }
+  .cards-section {
+    .slider-card {
+      left: 50px;
+      right: 50px;
+      position: absolute;
+      bottom: -114px;
+      @media only screen and (max-width: 600px) {
+        top: 195px;
+        bottom: auto;
+        left: 0;
+        right: 0;
+      }
+    }
   }
 }
 </style>

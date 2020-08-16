@@ -3,6 +3,7 @@
     <uf-navbar></uf-navbar>
     <sub-navbar></sub-navbar>
     <home-header class="home-header"></home-header>
+    <div class="empty-section"></div>
     <div class="container">    
       <br />
       <div class="video-section">
@@ -23,15 +24,26 @@
 </template>
 
 <style lang="less" scoped>
+.empty-section {
+  position: relative;
+  height: 800px;
+  float: left;
+  @media only screen and (max-width: 600px) {
+      float: none;
+    }
+}
 .video-section {
   margin-top: 100px;
+  position: relative;
     @media only screen and (max-width: 600px) {
-      margin-top: 10px;
+      margin-top: 0;
     }
   .video-main-title {
-   font-size: 40px;
+    font-size: 40px;
+    margin-top: 150px;
      @media only screen and (max-width: 600px) {
-       font-size: 20px;
+       font-size: 25px;
+       margin-top: 0;
      }
   }
   .side-title {

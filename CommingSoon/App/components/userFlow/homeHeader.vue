@@ -3,7 +3,7 @@
     <img class="background-img" src="App/assets/homeWork.png" />
     <section class="overlay-layer"></section>
     <div class="header-content d-flex flex-column">
-      <p class="main-title text-center p-md-4">
+      <p class="main-title text-center p-md-2 mb-0">
         <b>
           Video On Demand & Paid
           <br />Live Streaming Marketplace
@@ -38,6 +38,7 @@
     width: 100%;
   }
   .header-content {
+    width: 100%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -79,6 +80,9 @@
         bottom: auto;
         left: 0;
         right: 0;
+      }
+      @media only screen and (device-width: 768px) {
+       bottom: -200px;
       }
     }
   }

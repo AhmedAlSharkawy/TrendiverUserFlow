@@ -1,6 +1,6 @@
 <template>
-  <div class="cards-section justify-content-between">
-    <div class="card col-md-4 pl-0">
+  <div class="cards-section justify-content-around">
+    <div class="card col-md-4">
       <section class="card-content p-2">
         <img svg-inline class="card-icon" src="../../assets/clock.svg" />
         <p class="card-title">Unlimited Access</p>
@@ -11,7 +11,7 @@
         </p>
       </section>
     </div>
-    <div class="card col-md-4 pl-0">
+    <div class="card col-md-4">
       <section class="card-content p-2">
         <img svg-inline class="card-icon" src="../../assets/graduation.svg" />
         <p class="card-title">Interaction Learning</p>
@@ -22,7 +22,7 @@
         </p>
       </section>
     </div>
-    <div class="card col-md-4 pl-0">
+    <div class="card col-md-4">
       <section class="card-content p-2">
         <img svg-inline class="card-icon" src="../../assets/money.svg" />
         <p class="card-title">Save Money</p>
@@ -50,12 +50,14 @@
     flex-direction: column;
     text-align: center;
     border: 0;
+    background-color: transparent;
     @media only screen and (max-width: 600px) {
       margin-bottom: 5px;
     }
     .card-content {
       box-shadow: 0px 0px 5px rgba(19, 19, 51, 0.1);
       border-radius: 8px;
+      background-color: white;
     }
     .card-icon {
       align-self: center;

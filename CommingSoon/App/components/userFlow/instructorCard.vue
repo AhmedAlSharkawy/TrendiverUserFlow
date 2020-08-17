@@ -1,8 +1,8 @@
 <template>
   <div class="instructor-card col-md-4 mb-md-0 mb-2">
     <div class="card-content p-3">
-      <!-- <img svg-inline src="../../assets/work.svg" /> -->
-      <p class="card-title">
+      <img class="provider-photo" src="App/assets/provider.png" />
+      <p class="card-title pt-5">
         <b>IIP Institute</b>
       </p>
       <p class="card-sub-title">
@@ -24,6 +24,10 @@
     background-color: #f3f5f7;
     box-shadow: 0px 0px 8px rgba(19, 19, 51, 0.15);
     border-radius: 8px;
+  }
+  .provider-photo {
+    position: absolute;
+    top: -67px;
   }
   .card-title {
     color: #3512b1;

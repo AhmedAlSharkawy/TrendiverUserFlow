@@ -38,11 +38,6 @@
         font-size: 25px;
       }
     }
-    // .context {
-    //   @media only screen and (max-width: 600px) {
-    //     display: none;
-    //   }
-    //}
   }
   .provider-logo {
     position: absolute;

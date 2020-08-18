@@ -1,7 +1,7 @@
 <template>
   <div class="instructor-card col-md-4 mb-md-0 mb-2">
     <div class="card-content p-3">
-      <img class="provider-photo" src="App/assets/provider.png" />
+      <img class="instructor-photo" src="App/assets/provider.png" />
       <p class="card-title pt-5">
         <b>IIP Institute</b>
       </p>
@@ -24,19 +24,19 @@
     background-color: #f3f5f7;
     box-shadow: 0px 0px 8px rgba(19, 19, 51, 0.15);
     border-radius: 8px;
+    .card-title {
+      color: #3512b1;
+    }
+    .card-sub-title {
+      color: #21252a;
+    }
+    .card-text {
+      color: #495057;
+    }
   }
-  .provider-photo {
+  .instructor-photo {
     position: absolute;
     top: -67px;
-  }
-  .card-title {
-    color: #3512b1;
-  }
-  .card-sub-title {
-    color: #21252a;
-  }
-  .card-text {
-    color: #495057;
   }
 }
 </style>

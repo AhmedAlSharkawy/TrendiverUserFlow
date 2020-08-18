@@ -9,18 +9,24 @@ import videoCard from "./components/userFlow/videoCard.vue";
 import preFooter from "./components/userFlow/preFooter.vue";
 import instructorCard from "./components/userFlow/instructorCard.vue";
 import homeHeader from "./components/userFlow/homeHeader.vue";
+import providerCard from "./components/userFlow/providerCard.vue";
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
+import categoriesPage from "./components/userFlow/categoriesPage.vue";
+
+//userFlow main pages
+Vue.component("home-page", homePage);
+Vue.component("categories-page", categoriesPage);
 
 
-//userFlow
-Vue.component("home-page",homePage);
+//userflow components
 Vue.component("uf-navbar", userFlowNavbar);
 Vue.component("sub-navbar", subNavbar);
-Vue.component("slider-card",sliderCard);
+Vue.component("slider-card", sliderCard);
 Vue.component("uf-footer", footer);
-Vue.component("pre-footer",preFooter);
+Vue.component("pre-footer", preFooter);
 Vue.component("video-card", videoCard);
 Vue.component("instructor-card", instructorCard);
-Vue.component("home-header",homeHeader);
+Vue.component("home-header", homeHeader);
+Vue.component("provider-card", providerCard);

@@ -10,6 +10,8 @@ import preFooter from "./components/userFlow/preFooter.vue";
 import instructorCard from "./components/userFlow/instructorCard.vue";
 import homeHeader from "./components/userFlow/homeHeader.vue";
 import providerCard from "./components/userFlow/providerCard.vue";
+import providerHeader from "./components/userFlow/providerHeader.vue";
+
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
@@ -30,3 +32,4 @@ Vue.component("video-card", videoCard);
 Vue.component("instructor-card", instructorCard);
 Vue.component("home-header", homeHeader);
 Vue.component("provider-card", providerCard);
+Vue.component("provider-header", providerHeader);

@@ -11,6 +11,7 @@ import instructorCard from "./components/userFlow/instructorCard.vue";
 import homeHeader from "./components/userFlow/homeHeader.vue";
 import providerCard from "./components/userFlow/providerCard.vue";
 import providerHeader from "./components/userFlow/providerHeader.vue";
+import paymentCard from "./components/userFlow/paymentCard.vue";
 
 
 //userFlow main pages
@@ -33,3 +34,4 @@ Vue.component("instructor-card", instructorCard);
 Vue.component("home-header", homeHeader);
 Vue.component("provider-card", providerCard);
 Vue.component("provider-header", providerHeader);
+Vue.component("payment-card", paymentCard);

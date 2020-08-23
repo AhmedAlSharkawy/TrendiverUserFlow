@@ -21,7 +21,7 @@
       <p class="mb-4">This Content features:</p>
       <div class="d-flex flex-row">
         <img svg-inline src="../../assets/play.svg" />
-        <section class=" recorded d-flex flex-column pl-2">
+        <section class="recorded d-flex flex-column pl-2">
           <p class="recorded-text mb-0">Recorded</p>
           <p>11.5 hours on-demand</p>
         </section>
@@ -88,6 +88,9 @@
     padding: 14px 30px;
     color: #3512b1;
     font-size: 14px;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
   }
   .card-content {
     p {
@@ -97,8 +100,11 @@
       margin-top: -11px;
       .recorded-text {
         font-size: 14px;
-        color: #3512B1;
+        color: #3512b1;
       }
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
     }
   }
 }

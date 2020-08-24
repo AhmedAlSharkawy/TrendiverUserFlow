@@ -12,6 +12,7 @@ import homeHeader from "./components/userFlow/homeHeader.vue";
 import providerCard from "./components/userFlow/providerCard.vue";
 import providerHeader from "./components/userFlow/providerHeader.vue";
 import paymentCard from "./components/userFlow/paymentCard.vue";
+import playlist from "./components/userFlow/playlist.vue";
 
 
 //userFlow main pages
@@ -35,3 +36,4 @@ Vue.component("home-header", homeHeader);
 Vue.component("provider-card", providerCard);
 Vue.component("provider-header", providerHeader);
 Vue.component("payment-card", paymentCard);
+Vue.component("playlist", playlist);

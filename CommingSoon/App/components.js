@@ -13,7 +13,7 @@ import providerCard from "./components/userFlow/providerCard.vue";
 import providerHeader from "./components/userFlow/providerHeader.vue";
 import paymentCard from "./components/userFlow/paymentCard.vue";
 import playlist from "./components/userFlow/playlist.vue";
-
+import instructorTab from "./components/userFlow/instructorTab.vue";
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
@@ -37,3 +37,4 @@ Vue.component("provider-card", providerCard);
 Vue.component("provider-header", providerHeader);
 Vue.component("payment-card", paymentCard);
 Vue.component("playlist", playlist);
+Vue.component("instructor-tab", instructorTab);

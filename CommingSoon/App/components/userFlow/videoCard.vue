@@ -2,16 +2,16 @@
   <div>
     <div class="card">
       <div>
-        <img svg-inline class="card-img-top" src="../../assets/work.svg" />
+        <img  class="card-img-top" src="App/assets/office.png" />
       </div>
       <div class="card-body">
         <p class="sub-title mb-1">Recorded</p>
         <p class="card-title">
           <b>Business Analytics</b>
         </p>
-        <div class="card-content d-flex flex-row">
+        <div class="d-flex flex-row">
           <img svg-inline class="mr-2" src="../../assets/userPhoto.svg" />
-          <p class="card-content-text">
+          <p>
             <b>Moo Islam</b>
           </p>
         </div>
@@ -32,7 +32,7 @@
   border-radius: 8px;
   width: 17rem;
   .card-img-top {
-    width: 275px;
+    width: 100%;
     height: auto;
   }
   .card-body {

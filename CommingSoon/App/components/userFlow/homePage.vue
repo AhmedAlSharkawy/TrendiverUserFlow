@@ -2,7 +2,8 @@
   <div>
     <uf-navbar></uf-navbar>
     <sub-navbar></sub-navbar>
-    <home-header class="home-header"></home-header>
+    <product-header></product-header>
+    <!-- <home-header class="home-header"></home-header> -->
     <div class="empty-section"></div>
     <div class="container">
       <div class="video-section">

@@ -16,6 +16,8 @@ import playlist from "./components/userFlow/playlist.vue";
 import instructorTab from "./components/userFlow/instructorTab.vue";
 import overviewTab from "./components/userFlow/overviewTab.vue";
 import productHeader from "./components/userFlow/productHeader.vue";
+import contentTable from "./components/userFlow/contentTable.vue";
+
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
@@ -42,3 +44,4 @@ Vue.component("playlist", playlist);
 Vue.component("instructor-tab", instructorTab);
 Vue.component("overview-tab", overviewTab);
 Vue.component("product-header", productHeader);
+Vue.component("content-table", contentTable);

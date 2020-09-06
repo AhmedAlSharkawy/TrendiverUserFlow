@@ -17,6 +17,7 @@ import instructorTab from "./components/userFlow/instructorTab.vue";
 import overviewTab from "./components/userFlow/overviewTab.vue";
 import productHeader from "./components/userFlow/productHeader.vue";
 import contentTable from "./components/userFlow/contentTable.vue";
+import documents from "./components/userFlow/documents.vue";
 
 
 //userFlow main pages
@@ -45,3 +46,4 @@ Vue.component("instructor-tab", instructorTab);
 Vue.component("overview-tab", overviewTab);
 Vue.component("product-header", productHeader);
 Vue.component("content-table", contentTable);
+Vue.component("documents",documents);

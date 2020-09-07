@@ -18,6 +18,10 @@
           <video-card></video-card>
         </section>
       </div>
+      <br>
+      <br>
+      <br>
+      <content-tabs></content-tabs>
     </div>
     <!-- <pre-footer></pre-footer> -->
     <uf-footer></uf-footer>

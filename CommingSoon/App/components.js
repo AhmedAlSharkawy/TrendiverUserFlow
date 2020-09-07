@@ -19,6 +19,7 @@ import productHeader from "./components/userFlow/productHeader.vue";
 import contentTable from "./components/userFlow/contentTable.vue";
 import documents from "./components/userFlow/documents.vue";
 import contentViewHeader from "./components/userFlow/contentViewHeader.vue";
+import contentViewTabs from "./components/userFlow/contentViewTabs.vue";
 
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
@@ -48,3 +49,4 @@ Vue.component("product-header", productHeader);
 Vue.component("content-table", contentTable);
 Vue.component("documents", documents);
 Vue.component("content-header", contentViewHeader);
+Vue.component("content-tabs", contentViewTabs);

@@ -1,15 +1,16 @@
 <template>
-  <div class="content-tabs col-md-9">
+  <div class="content-tabs col-md-9 p-0">
     <nav>
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a
           class="nav-item nav-link active"
-          id="nav-home-tab"
+          id="nav-chat-tab"
           data-toggle="tab"
-          href="#nav-home"
+          href="#nav-chat"
           role="tab"
-          aria-controls="nav-home"
-          aria-selected="true">Chat</a>
+          aria-controls="nav-chat"
+          aria-selected="true"
+        >Chat</a>
         <a
           class="nav-item nav-link"
           id="nav-profile-tab"
@@ -17,7 +18,17 @@
           href="#nav-profile"
           role="tab"
           aria-controls="nav-profile"
-          aria-selected="false">Assignments</a>
+          aria-selected="false"
+        >Assignments</a>
+        <a
+          class="nav-item nav-link d-sm-block d-md-none"
+          id="nav-document-tab"
+          data-toggle="tab"
+          href="#nav-document"
+          role="tab"
+          aria-controls="nav-document"
+          aria-selected="false"
+        >Documents</a>
         <a
           class="nav-item nav-link"
           id="nav-contact-tab"
@@ -25,15 +36,17 @@
           href="#nav-contact"
           role="tab"
           aria-controls="nav-contact"
-          aria-selected="false">FAQs</a>
+          aria-selected="false"
+        >FAQs</a>
       </div>
     </nav>
     <div class="tab-content" id="nav-tabContent">
       <div
         class="tab-pane fade show active"
-        id="nav-home"
+        id="nav-chat"
         role="tabpanel"
-        aria-labelledby="nav-home-tab">...</div>
+        aria-labelledby="nav-chat-tab"
+      >...</div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <p class="assignmets-tab mt-4">
           <b>Assignments</b>
@@ -127,6 +140,13 @@
           </div>
         </div>
       </div>
+      <div class="tab-pane fade" id="nav-document" role="tabpanel" aria-labelledby="nav-document-tab">
+        <section class="documents-section d-flex flex-column p-3">
+          <a href="#">Video Slides [pdf]</a>
+          <a href="#">Interview Questions [pdf]</a>
+          <a href="#">Game Plan [pdf]</a>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -144,11 +164,25 @@ export default {
 <style lang="less" scoped>
 .content-tabs {
   .nav-tabs {
-    a{
-      color: #9299A0;
+    a {
+      color: #9299a0;
       &:active {
-        color: #3512B1;
+        color: #3512b1;
       }
+    }
+    .nav-link {
+      border: none;
+      &:active {
+        color: #3512b1;
+        border-color: white white #dee2e6;
+        background-color: none;
+      }
+      @media only screen and (max-width: 600px) {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+    .nav-item {
+      margin-bottom: 0;
     }
   }
   .assignmets-tab {
@@ -166,15 +200,25 @@ export default {
       font-size: 18px;
     }
   }
-  .tab-pane {
-    #accordion {
-     background-color: #F3F5F7;
-     border-radius: 8px;
-     .title {
-       color: #000000;
-       font-size: 20px;
-       text-decoration: none
-     }
+  .tab-content {
+    .tab-pane {
+      #accordion {
+        background-color: #f3f5f7;
+        border-radius: 8px;
+        .title {
+          color: #000000;
+          font-size: 20px;
+          text-decoration: none;
+        }
+      }
+      .documents-section {
+        background: #f3f5f7;
+        border-radius: 8px;
+        a {
+          color: #343a40;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }

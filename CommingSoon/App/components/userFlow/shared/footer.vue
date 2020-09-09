@@ -1,8 +1,8 @@
 <template>
   <div class="footer-section">
     <div class="footer container pt-md-5 p-4 justify-content-around">
-      <section class="col-md-4 p-0">
-        <section class="d-flex flex-row">
+      <section class="logo-section col-md-4 pb-2 p-md-0">
+        <section class="brand-name d-flex flex-row">
           <img class="img-logo" src="App/assets/logo.png" />
           <p class="mt-auto ml-2">
             <b>Trendiver</b>
@@ -13,7 +13,7 @@
           <br />live streaming marketplace
         </p>
       </section>
-      <section class="inner-section col-md-4 p-0">
+      <section class="inner-section col-md-4 pb-2 p-md-0">
         <p>
           <b>Site Map</b>
         </p>
@@ -22,7 +22,7 @@
         <a>Sports</a>
         <a>Arts & Literature</a>
       </section>
-      <section class="col-md-4 p-0">
+      <section class="news-letter col-md-4 pb-2 p-md-0">
         <p>
           <b>Newsletter</b>
         </p>
@@ -53,15 +53,30 @@
       display: flex;
       flex-direction: column;
     }
-    .img-logo {
-      width: 50px;
-      height: 50px;
+    .logo-section {
+      .brand-name {
+         @media only screen and (max-width: 600px) {
+           justify-content: center;
+         }
+      }
+       @media only screen and (max-width: 600px) {
+         p {
+           text-align: center;
+         }
+       }
+      .img-logo {
+        width: 50px;
+        height: 50px;
+      }
     }
     .inner-section {
       display: flex;
       flex-direction: column;
       a {
         margin-bottom: 17px;
+      }
+      @media only screen and (max-width: 600px) {
+        text-align: center;
       }
     }
     .footer-input {
@@ -77,6 +92,11 @@
       border-radius: 8px;
       outline: none;
       color: white;
+    }
+    .news-letter {
+      @media only screen and (max-width: 600px) {
+        text-align: center;
+      }
     }
   }
   .copy-right {

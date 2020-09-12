@@ -7,16 +7,16 @@
           <p class="pre-footer-title mb-md-4 mb-0">
             <b>Record, Upload, Monetize</b>
           </p>
-          <p class="mb-0">
+          <p class="content mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu facilisis lorem, a laoreet lorem.
-            <br />Donec ac turpis semper, viverra lorem vel, sagittis dui.
+            <br />Donec ac turpis semper,
           </p>
-          <button class="creator-btn mt-md-4 mt-0" type="submit">
+          <button class="creator-btn mt-md-5 mt-0" type="submit">
             <b>Become a Creator</b>
           </button>
         </div>
       </div>
-      <img class="instructor-img" src="App/assets/instructor.png" />
+      <img class="instructor-img" src="App/assets/instructorf.png" />
     </div>
   </div>
 </template>
@@ -31,7 +31,7 @@
   }
   .pre-footer {
     .pre-footer-content {
-      top: 30px;
+      top: 60px;
       bottom: 0;
       color: #f8f7fd;
       position: absolute;
@@ -39,12 +39,29 @@
       @media only screen and (max-width: 600px) {
         line-height: 1.5;
         bottom: 0;
-        top: 10px;
+        top: 3px;
+        // left: 0;
+      }
+      @media only screen and (device-width: 768px) {
+        top: 23px;
+        line-height: 1.7;
+      }
+      @media (min-device-width: 1024px) and (max-device-width: 1366px) {
+        top: 24px;
       }
       .pre-footer-title {
         font-size: 40px;
         @media only screen and (max-width: 600px) {
           font-size: 20px;
+          text-align: center;
+        }
+      }
+      .content {
+        @media only screen and (max-width: 600px) {
+          text-align: center;
+          br {
+            display: none;
+          }
         }
       }
     }
@@ -54,15 +71,26 @@
       border: none;
       padding: 2px 30px;
       color: #ffffff;
+      @media only screen and (max-width: 600px) {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
     }
   }
   .instructor-img {
     position: absolute;
-    left: 74%;
-    top: -20%;
-     @media only screen and (max-width: 600px) {
-       display: none;
-     }
+    left: 68%;
+    top: -32%;
+    width: 23%;
+    box-shadow: 14px 13px 2px #feca55;
+    border-radius: 8px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+    @media only screen and (device-width: 768px) {
+      left: 70%;
+    }
   }
 }
 </style>

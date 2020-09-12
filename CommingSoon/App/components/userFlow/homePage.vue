@@ -19,7 +19,7 @@
         </section>
       </div>
     </div>
-    <!-- <pre-footer></pre-footer> -->
+    <pre-footer></pre-footer>
     <uf-footer></uf-footer>
   </div>
 </template>

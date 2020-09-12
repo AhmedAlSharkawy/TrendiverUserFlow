@@ -40,7 +40,6 @@
         line-height: 1.5;
         bottom: 0;
         top: 3px;
-        // left: 0;
       }
       @media only screen and (device-width: 768px) {
         top: 23px;

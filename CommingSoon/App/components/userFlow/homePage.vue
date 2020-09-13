@@ -3,10 +3,13 @@
     <uf-navbar></uf-navbar>
     <!-- <content-header></content-header> -->
     <sub-navbar></sub-navbar>
-    <product-header></product-header>
-    <!-- <home-header class="home-header"></home-header> -->
+    <!-- <product-header></product-header> -->
+    <home-header class="home-header"></home-header>
     <div class="empty-section"></div>
     <div class="container">
+      <div class="row">
+        <slider-card class="slider-card"></slider-card>
+      </div>
       <div class="video-section">
         <p class="video-main-title text-center">
           <b>Watch Your Favorite Content</b>
@@ -14,6 +17,24 @@
         <section>
           <p class="side-title">
             <b>Entertainment</b>
+          </p>
+          <video-card></video-card>
+        </section>
+        <section>
+          <p class="side-title">
+            <b>Science & Knowledge</b>
+          </p>
+          <video-card></video-card>
+        </section>
+        <section>
+          <p class="side-title">
+            <b>Health & Wellness</b>
+          </p>
+          <video-card></video-card>
+        </section>
+        <section>
+          <p class="side-title">
+            <b>Arts & Literature</b>
           </p>
           <video-card></video-card>
         </section>
@@ -49,6 +70,25 @@
   }
   .side-title {
     font-size: 20px;
+  }
+}
+.slider-card {
+  left: 50px;
+  right: 50px;
+  position: absolute;
+  top: 723px;
+  @media only screen and (max-width: 600px) {
+    top: 273px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+  }
+  @media only screen and (device-width: 768px) {
+    bottom: 316px;
+    top: auto;
+  }
+  @media (min-device-width: 1024px) and (max-device-width: 1024px) {
+    top: 534px;
   }
 }
 </style>

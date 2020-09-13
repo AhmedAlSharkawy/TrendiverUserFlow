@@ -17,9 +17,9 @@
         <b>Sign Up Now</b>
       </button>
     </div>
-    <div class="cards-section">
+    <!-- <div class="cards-section">
       <slider-card class="container slider-card"></slider-card>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -69,22 +69,6 @@
       }
     }
   }
-  .cards-section {
-    .slider-card {
-      left: 50px;
-      right: 50px;
-      position: absolute;
-      bottom: -114px;
-      @media only screen and (max-width: 600px) {
-        top: 195px;
-        bottom: auto;
-        left: 0;
-        right: 0;
-      }
-      @media only screen and (device-width: 768px) {
-       bottom: -200px;
-      }
-    }
-  }
+
 }
 </style>

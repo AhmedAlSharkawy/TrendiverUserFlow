@@ -28,6 +28,9 @@
   .background-img {
     width: 100%;
     height: auto;
+     @media only screen and (max-width: 600px) {
+      //  width: fit-content;
+     }
   }
   .pre-footer {
     .pre-footer-content {
@@ -46,7 +49,7 @@
         line-height: 1.7;
       }
       @media (min-device-width: 1024px) and (max-device-width: 1366px) {
-        top: 24px;
+        top: 51px;
       }
       .pre-footer-title {
         font-size: 40px;

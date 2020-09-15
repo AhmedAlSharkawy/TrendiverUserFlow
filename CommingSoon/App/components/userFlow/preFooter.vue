@@ -1,5 +1,5 @@
 <template>
-  <div class="pre-footer-section mt-5">
+  <div class="pre-footer-section">
     <img class="background-img" svg-inline src="../../assets/Background.svg" />
     <div class="d-flex flex-row container">
       <div class="pre-footer">
@@ -25,6 +25,10 @@
 <style lang="less" scoped>
 .pre-footer-section {
   position: relative;
+  margin-top: 160px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 0;
+  }
   .background-img {
     width: 100%;
     height: auto;

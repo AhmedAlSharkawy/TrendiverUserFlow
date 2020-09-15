@@ -1,6 +1,6 @@
 <template>
   <div class="footer-section">
-    <div class="footer container pt-md-5 p-4 justify-content-around">
+    <div class="footer container pt-5 pb-4 justify-content-around">
       <section class="logo-section col-md-4 pb-2 p-md-0">
         <section class="brand-name d-flex flex-row">
           <img class="img-logo" src="App/assets/logo.png" />

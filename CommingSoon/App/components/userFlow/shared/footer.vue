@@ -44,7 +44,7 @@
 
 <style lang="less" scoped>
 .footer-section {
-  margin-top: 20px;
+  margin-top: 80px;
   background: #e7ebee;
   .footer {
     display: flex;

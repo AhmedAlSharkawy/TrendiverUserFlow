@@ -25,7 +25,7 @@
 <style lang="less" scoped>
 .pre-footer-section {
   position: relative;
-  margin-top: 160px;
+  margin-top: 190px;
   @media only screen and (max-width: 600px) {
     margin-top: 0;
   }

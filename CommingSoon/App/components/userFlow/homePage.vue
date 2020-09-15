@@ -13,25 +13,45 @@
           <p class="side-title">
             <b>Entertainment</b>
           </p>
-          <video-card></video-card>
+          <section class="d-flex flex-row justify-content-around">
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+          </section>
         </section>
         <section class="card-container">
           <p class="side-title">
             <b>Science & Knowledge</b>
           </p>
-          <video-card></video-card>
+          <section class="d-flex flex-row justify-content-around">
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+          </section>
         </section>
         <section class="card-container">
           <p class="side-title">
             <b>Health & Wellness</b>
           </p>
-          <video-card></video-card>
+          <section class="d-flex flex-row justify-content-around">
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+          </section>
         </section>
         <section class="card-container">
           <p class="side-title">
             <b>Arts & Literature</b>
           </p>
-          <video-card></video-card>
+          <section class="d-flex flex-row justify-content-around">
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+            <video-card></video-card>
+          </section>
         </section>
       </div>
     </div>
@@ -51,7 +71,7 @@
   }
 }
 .video-section {
-  margin-top: 150px;
+  margin-top: 200px;
   position: relative;
   @media only screen and (max-width: 600px) {
     margin-top: 0;

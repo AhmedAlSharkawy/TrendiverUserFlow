@@ -13,7 +13,7 @@
           <p class="side-title">
             <b>Entertainment</b>
           </p>
-          <section class="d-flex flex-row justify-content-around">
+          <section class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
@@ -24,7 +24,7 @@
           <p class="side-title">
             <b>Science & Knowledge</b>
           </p>
-          <section class="d-flex flex-row justify-content-around">
+          <section class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
@@ -35,7 +35,7 @@
           <p class="side-title">
             <b>Health & Wellness</b>
           </p>
-          <section class="d-flex flex-row justify-content-around">
+          <section class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
@@ -46,7 +46,7 @@
           <p class="side-title">
             <b>Arts & Literature</b>
           </p>
-          <section class="d-flex flex-row justify-content-around">
+          <section class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
@@ -91,6 +91,13 @@
   }
   .card-container {
     margin-bottom: 40px;
+    .cards-section {
+      justify-content: space-around;
+      @media only screen and (max-width: 600px) {
+        justify-content: unset;
+        overflow-x: scroll;
+      }
+    }
   }
   .side-title {
     font-size: 20px;

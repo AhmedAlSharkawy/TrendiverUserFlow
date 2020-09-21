@@ -98,7 +98,8 @@
       left: 70%;
     }
     @media (min-device-width: 2560px) and (max-device-width: 2560px) {
-      width: 19%;
+      width: 17%;
+      top: -29%;
     }
   }
 }

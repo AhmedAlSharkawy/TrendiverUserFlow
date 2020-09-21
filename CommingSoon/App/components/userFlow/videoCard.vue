@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="card">
+    <div class="card mr-4">
       <div>
-        <img  class="card-img-top" src="App/assets/office.png" />
+        <img class="card-img-top" src="App/assets/office.png" />
       </div>
       <div class="card-body">
         <p class="sub-title mb-1">Recorded</p>
@@ -30,7 +30,7 @@
 .card {
   box-shadow: 0px 0px 8px rgba(19, 19, 51, 0.15);
   border-radius: 8px;
-  width: 17rem;
+  width: 16rem;
   .card-img-top {
     width: 100%;
     height: auto;

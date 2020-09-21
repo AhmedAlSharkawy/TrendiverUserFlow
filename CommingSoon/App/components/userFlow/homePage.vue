@@ -9,50 +9,51 @@
         <p class="video-main-title text-center">
           <b>Watch Your Favorite Content</b>
         </p>
-        <section class="card-container">
+        <div class="card-container">
           <p class="side-title">
             <b>Entertainment</b>
           </p>
-          <section class="d-flex flex-row cards-section">
+          <div class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
-          </section>
-        </section>
-        <section class="card-container">
+          </div>
+        </div>
+        <div class="card-container">
           <p class="side-title">
             <b>Science & Knowledge</b>
           </p>
-          <section class="d-flex flex-row cards-section">
+          <div class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
-          </section>
-        </section>
-        <section class="card-container">
+          </div>
+        </div>
+        <div class="card-container">
           <p class="side-title">
             <b>Health & Wellness</b>
           </p>
-          <section class="d-flex flex-row cards-section">
+          <div class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
-          </section>
-        </section>
-        <section class="card-container">
+          </div>
+        </div>
+        <div class="card-container">
           <p class="side-title">
             <b>Arts & Literature</b>
           </p>
-          <section class="d-flex flex-row cards-section">
+          <div class="d-flex flex-row cards-section">
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
             <video-card></video-card>
-          </section>
-        </section>
+          </div>
+        </div>
+         
       </div>
     </div>
     <pre-footer></pre-footer>
@@ -91,12 +92,16 @@
   }
   .card-container {
     margin-bottom: 40px;
+    overflow: hidden;
     .cards-section {
-      justify-content: space-around;
+      justify-content: space-between;
       @media only screen and (max-width: 600px) {
         justify-content: unset;
         overflow-x: scroll;
       }
+       @media (min-device-width: 1024px) and (max-device-width: 1024px) {
+         overflow-x: scroll;
+       }
     }
   }
   .side-title {

@@ -17,9 +17,7 @@
         <b>Sign Up Now</b>
       </button>
     </div>
-    <div class="cards-section">
-      <slider-card class="container slider-card"></slider-card>
-    </div>
+    <slider-card class="container slider-card"></slider-card>
   </div>
 </template>
 
@@ -69,27 +67,23 @@
       }
     }
   }
-  .cards-section {
-    .slider-card {
-      left: 50px;
-      right: 50px;
-      position: absolute;
-      top: 350px;
-      @media only screen and (max-width: 600px) {
-        top: 173px;
-        bottom: auto;
-        left: 0;
-        right: 0;
-      }
-      @media only screen and (device-width: 768px) {
-        top: 304px;
-      }
-      @media screen and (min-width: 992px) {
-        top: 622px;
-      }
-      @media (min-device-width: 1024px) and (max-device-width: 1024px) {
-        top: 440px;
-      }
+  .slider-card {
+    left: 50px;
+    right: 50px;
+    position: absolute;
+    top: 350px;
+    @media only screen and (max-width: 600px) {
+      top: 173px;
+      bottom: auto;
+      left: 0;
+      right: 0;
+    }
+    @media only screen and (device-width: 768px) {
+      top: 304px;
+    }
+    @media (min-device-width: 1024px) and (max-device-width: 2560px) {
+      top: auto;
+      bottom: -120px;
     }
   }
 }

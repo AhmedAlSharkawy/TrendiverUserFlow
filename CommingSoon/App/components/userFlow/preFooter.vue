@@ -16,8 +16,8 @@
           </button>
         </div>
       </div>
-      <img class="instructor-img" src="App/assets/instructorf.png" />
     </div>
+    <img class="instructor-img" src="App/assets/instructorf.png" />
   </div>
 </template>
 
@@ -28,6 +28,9 @@
   margin-top: 190px;
   @media only screen and (max-width: 600px) {
     margin-top: 0;
+  }
+  @media (min-device-width: 2560px) and (max-device-width: 2560px) {
+    margin-top: 300px;
   }
   .background-img {
     width: 100%;
@@ -93,6 +96,9 @@
     }
     @media only screen and (device-width: 768px) {
       left: 70%;
+    }
+    @media (min-device-width: 2560px) and (max-device-width: 2560px) {
+      width: 19%;
     }
   }
 }

@@ -22,14 +22,16 @@ import contentViewHeader from "./components/userFlow/contentViewHeader.vue";
 import contentViewTabs from "./components/userFlow/contentViewTabs.vue";
 import videoContent from "./components/userFlow/videoContent.vue";
 
+
 //userFlow main pages
 import homePage from "./components/userFlow/homePage.vue";
 import categoriesPage from "./components/userFlow/categoriesPage.vue";
+import userProfile from "./components/userFlow/userProfile.vue";
 
 //userFlow main pages
 Vue.component("home-page", homePage);
 Vue.component("categories-page", categoriesPage);
-
+Vue.component("user-profile", userProfile);
 
 //userflow components
 Vue.component("uf-navbar", userFlowNavbar);

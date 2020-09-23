@@ -2,7 +2,7 @@
   <div>
     <uf-navbar></uf-navbar>
     <sub-navbar></sub-navbar>
-    <home-header class="home-header"></home-header>
+    <!-- <home-header class="home-header"></home-header>
     <div class="empty-section"></div>
     <div class="container">
       <div class="video-section">
@@ -53,10 +53,10 @@
             <video-card></video-card>
           </div>
         </div>
-         
       </div>
     </div>
-    <pre-footer></pre-footer>
+    <pre-footer></pre-footer> -->
+    <user-profile></user-profile>
     <uf-footer></uf-footer>
   </div>
 </template>
